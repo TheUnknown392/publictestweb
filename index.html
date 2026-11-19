@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Schedule</title>
+
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          margin: 0;
+          padding: 40px 20px;
+          font-family: system-ui, sans-serif;
+          background: #f8fafc;
+          color: #1e293b;
+      }
+
+      main {
+          max-width: 1100px;
+          margin: auto;
+      }
+
+      header {
+          margin-bottom: 32px;
+      }
+
+      h1 {
+          margin-bottom: 8px;
+          font-size: 2rem;
+      }
+
+      header p {
+          color: #64748b;
+          line-height: 1.6;
+      }
+
+      section {
+          margin-bottom: 48px;
+      }
+
+      h2 {
+          font-size: 1.25rem;
+          margin-bottom: 8px;
+      }
+
+      .description {
+          color: #64748b;
+          margin-bottom: 20px;
+      }
+
+      .schedule-container {
+          width: 100%;
+          overflow: hidden;
+          border: 1px solid #e2e8f0;
+          border-radius: 12px;
+          background: white;
+      }
+
+      iframe {
+          display: block;
+          width: 100%;
+          height: 900px;
+          border: none;
+      }
+
+      footer {
+          margin-top: 40px;
+          padding-top: 20px;
+          border-top: 1px solid #e2e8f0;
+          color: #94a3b8;
+          font-size: 0.85rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <p> click to get more info </p>
+      <section>
+        <h2>Compact Schedule</h2>
+        <p class="description">
+          A condensed view with less spacing between sessions.
+        </p>
+
+        <div class="schedule-container">
+          <iframe
+            src="https://agorify.com/embed/a/9QdmEuDmjY7YfTlURlQA"
+            title="Compact event schedule"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <section>
+        <h2>Comfortable Schedule</h2>
+        <p class="description">
+          A more spacious view with larger text and more room
+          between schedule items.
+        </p>
+
+        <div class="schedule-container">
+          <iframe
+            src="https://agorify.com/embed/a/9QdmEuDmjY7YfTlURlQA?layout=comfortable"
+            title="Comfortable event schedule"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <footer>
+        Event schedule powered by Agorify.
+      </footer>
+    </main>
+  </body>
+</html>
